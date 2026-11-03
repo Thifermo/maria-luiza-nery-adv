@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maria Luiza Nery | Advocacia Previdenciária – Aposentadoria e Benefícios do INSS</title>
+  <meta name="description" content="Advogada previdenciarista Maria Luiza Nery. Aposentadoria negada, cálculos errados ou demora na análise do INSS? Atendimento digital em todo o Brasil, humano e sem juridiquês.">
+  <meta name="theme-color" content="#050505">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mrs+Saint+Delafield&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#050505',
+            asphalt: '#121212',
+            card: '#1A1A1E',
+            gold: '#D4AF37',
+            champagne: '#E5C378',
+            cream: '#F8F9FA',
+            mist: '#D1D5DB'
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'Roboto', 'system-ui', 'sans-serif'],
+            script: ['"Mrs Saint Delafield"', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Base 18px: todos os tamanhos em rem escalam a partir daqui (acessibilidade 3ª idade) */
+    html { font-size: 18px; }
+    body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    :focus-visible { outline: 3px solid #E5C378; outline-offset: 3px; border-radius: 6px; }
+
+    .btn-gold {
+      background: linear-gradient(180deg, #E9CB74 0%, #D4AF37 100%);
+      box-shadow: 0 12px 30px -12px rgba(212,175,55,.6), inset 0 1px 0 rgba(255,255,255,.35);
+      transition: transform .2s cubic-bezier(.2,.8,.2,1), box-shadow .2s, background .2s;
+    }
+    .btn-gold:hover {
+      background: linear-gradient(180deg, #F3DC95 0%, #E5C378 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px -12px rgba(229,195,120,.65), inset 0 1px 0 rgba(255,255,255,.4);
+    }
+    .btn-gold:active { transform: translateY(0) scale(.98); }
+
+    .fab-ring { animation: fab-pulse 2.6s ease-out infinite; }
+    @keyframes fab-pulse {
+      0%   { transform: scale(1);   opacity: .55; }
+      80%, 100% { transform: scale(1.7); opacity: 0; }
+    }
+
+    .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.8,.2,1); }
+    .js .reveal.in { opacity: 1; transform: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .fab-ring { animation: none; opacity: 0; }
+      .js .reveal { opacity: 1; transform: none; transition: none; }
+      .btn-gold, .btn-gold:hover { transition: none; transform: none; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body class="bg-ink text-mist font-sans text-lg leading-relaxed">
+
+  <!-- Ícone WhatsApp reutilizável -->
+  <svg width="0" height="0" class="absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-wa" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </symbol>
+  </svg>
+
+  <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-gold focus:text-ink focus:px-4 focus:py-2 focus:rounded-md">Pular para o conteúdo</a>
+
+  <!-- ============ A. HEADER ============ -->
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-gold/20 bg-ink/85 backdrop-blur-md">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-5 py-3 lg:px-10">
+      <a href="#topo" class="flex min-w-0 flex-col leading-tight sm:flex-row sm:items-center sm:gap-4" aria-label="Maria Luiza Nery | Advocacia Previdenciária – início">
+        <span class="font-serif text-xl font-semibold text-cream sm:text-2xl">Maria Luiza Nery</span>
+        <span class="hidden h-7 w-px bg-gradient-to-b from-transparent via-gold to-transparent sm:block" aria-hidden="true"></span>
+        <span class="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-champagne sm:text-xs">Advocacia Previdenciária</span>
+      </a>
+      <a href="https://wa.me/553784028634?text=Ol%C3%A1%2C%20Dra.%20Maria%20Luiza!%20Gostaria%20de%20falar%20com%20um%20especialista%20sobre%20o%20meu%20caso%20no%20INSS."
+         target="_blank" rel="noopener"
+         class="inline-flex min-h-[48px] shrink-0 items-center justify-center rounded-full border-[1.5px] border-gold px-4 text-sm font-semibold text-champagne transition hover:bg-gold/15 hover:text-white sm:px-6 sm:text-base">
+        Falar com Especialista
+      </a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ B. HERO (split-screen) ============ -->
+    <section id="topo" class="relative grid min-h-[100svh] grid-cols-1 bg-ink lg:grid-cols-2" aria-labelledby="hero-title">
+      <!-- Texto -->
+      <div class="relative z-10 flex items-center px-5 pb-14 pt-32 sm:px-10 lg:py-32 lg:pl-[max(2.5rem,calc((100vw-80rem)/2+2.5rem))] lg:pr-16">
+        <div class="max-w-xl">
+          <p class="reveal inline-flex items-center gap-2 text-base font-medium tracking-wide text-champagne">
+            <span>📍 Atendimento Digital em todo o Brasil</span>
+          </p>
+          <span class="reveal mt-4 block h-px w-20 bg-gold" aria-hidden="true"></span>
+
+          <h1 id="hero-title" class="reveal mt-7 font-serif text-[2.15rem] font-bold leading-[1.15] text-cream sm:text-5xl lg:text-[3.25rem]">
+            Não deixe o INSS decidir o seu futuro com um <em class="font-semibold not-italic text-gold">benefício injusto.</em>
+          </h1>
+
+          <p class="reveal mt-7 text-xl leading-relaxed text-mist">
+            Aposentadoria negada, cálculos errados ou demora na análise? Protegemos o seu direito e a sua dignidade para garantir o benefício que você realmente merece.
+          </p>
+
+          <div class="reveal mt-10">
+            <a href="https://wa.me/553784028634?text=Ol%C3%A1%2C%20Dra.%20Maria%20Luiza!%20Quero%20analisar%20o%20meu%20caso%20no%20INSS."
+               target="_blank" rel="noopener"
+               class="btn-gold inline-flex min-h-[64px] w-full items-center justify-center gap-3 rounded-full px-9 text-lg font-bold text-ink sm:w-auto">
+              <svg class="h-6 w-6" aria-hidden="true"><use href="#i-wa"/></svg>
+              Analisar Meu Caso Agora
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagem -->
+      <div class="relative min-h-[460px] overflow-hidden bg-asphalt lg:min-h-full">
+        <img src="image_eade16.jpg" alt="Dra. Maria Luiza Nery"
+             class="absolute inset-0 h-full w-full object-cover object-[50%_18%]" fetchpriority="high">
+        <!-- Fusão com o fundo preto -->
+        <div class="pointer-events-none absolute inset-0 bg-black/10"></div>
+        <div class="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-ink to-transparent lg:hidden"></div>
+        <div class="pointer-events-none absolute inset-y-0 left-0 hidden w-48 bg-gradient-to-r from-ink to-transparent lg:block"></div>
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-ink/80 to-transparent"></div>
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gold/40"></div>
+      </div>
+    </section>
+
+    <!-- ============ C. SOBRE (split invertido) ============ -->
+    <section id="sobre" class="bg-asphalt" aria-labelledby="sobre-title">
+      <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-5 py-20 sm:px-10 lg:grid-cols-2 lg:gap-20 lg:py-28">
+        <!-- Imagem (esquerda) -->
+        <div class="reveal relative mx-auto w-full max-w-md lg:max-w-none">
+          <div class="absolute -bottom-4 -right-4 h-full w-full rounded-2xl border border-gold/50" aria-hidden="true"></div>
+          <img src="image_eade17.jpg" alt="Dra. Maria Luiza Nery - Advogada Previdenciarista"
+               class="relative aspect-square w-full rounded-2xl border border-gold/30 object-cover shadow-[0_30px_60px_-25px_rgba(0,0,0,.9)]" loading="lazy">
+        </div>
+
+        <!-- Texto (direita) -->
+        <div class="reveal">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-gold">Sobre a especialista</p>
+          <span class="mt-4 block h-px w-16 bg-gold" aria-hidden="true"></span>
+          <h2 id="sobre-title" class="mt-6 font-serif text-balance text-4xl font-semibold leading-tight text-cream sm:text-5xl">Quem vai lutar pelo seu direito?</h2>
+          <p class="mt-7 text-xl text-mist">
+            Sou Maria Luiza Nery, advogada especialista em Direito Previdenciário. Meu escritório físico está em Campos Altos/MG, mas através do atendimento digital, luto pelos direitos de segurados em todo o Brasil.
+          </p>
+          <p class="mt-5 text-xl text-mist">
+            Eu entendo a frustração de contribuir uma vida inteira e se deparar com a burocracia do INSS. Meu atendimento não é apenas técnico; é humano. Trato a sua história com o respeito que ela exige, sem 'juridiquês'.
+          </p>
+          <p class="mt-8 font-script text-6xl leading-none text-champagne sm:text-7xl" aria-label="Assinatura: Maria Luiza Nery">Maria Luiza Nery</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ D. GRID DE DORES / SERVIÇOS ============ -->
+    <section id="servicos" class="bg-ink" aria-labelledby="servicos-title">
+      <div class="mx-auto max-w-7xl px-5 py-20 sm:px-10 lg:py-28">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <span class="mx-auto block h-px w-16 bg-gold" aria-hidden="true"></span>
+          <h2 id="servicos-title" class="mt-6 font-serif text-balance text-4xl font-semibold leading-tight text-cream sm:text-5xl">O que está tirando o seu sono hoje?</h2>
+        </div>
+
+        <ul class="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <li class="reveal group flex flex-col rounded-2xl border border-zinc-700 bg-card p-8 transition duration-300 hover:-translate-y-1 hover:border-gold">
+            <span class="flex h-14 w-14 items-center justify-center rounded-full border border-gold/40 text-gold transition group-hover:bg-gold/10">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </span>
+            <h3 class="mt-6 font-serif text-2xl font-semibold leading-snug text-cream">Aposentadoria Negada</h3>
+            <p class="mt-3 text-lg text-mist">O INSS negou seu pedido ou está demorando meses para dar uma resposta? Nós destravamos o seu processo.</p>
+          </li>
+
+          <li class="reveal group flex flex-col rounded-2xl border border-zinc-700 bg-card p-8 transition duration-300 hover:-translate-y-1 hover:border-gold">
+            <span class="flex h-14 w-14 items-center justify-center rounded-full border border-gold/40 text-gold transition group-hover:bg-gold/10">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2.75" width="14" height="18.5" rx="2.2"/><rect x="8" y="6" width="8" height="3"/><path d="M8.5 13h.01M12 13h.01M15.5 13h.01M8.5 16.5h.01M12 16.5h.01M15.5 16.5h.01" stroke-width="2.4"/></svg>
+            </span>
+            <h3 class="mt-6 font-serif text-2xl font-semibold leading-snug text-cream">Revisão de Cálculo</h3>
+            <p class="mt-3 text-lg text-mist">Muitos recebem menos do que deveriam porque o INSS ignorou tempos de contribuição. Revisamos cada centavo.</p>
+          </li>
+
+          <li class="reveal group flex flex-col rounded-2xl border border-zinc-700 bg-card p-8 transition duration-300 hover:-translate-y-1 hover:border-gold">
+            <span class="flex h-14 w-14 items-center justify-center rounded-full border border-gold/40 text-gold transition group-hover:bg-gold/10">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+            </span>
+            <h3 class="mt-6 font-serif text-2xl font-semibold leading-snug text-cream">Benefício BPC/LOAS</h3>
+            <p class="mt-3 text-lg text-mist">Para idosos acima de 65 anos ou pessoas com deficiência de baixa renda que nunca contribuíram.</p>
+          </li>
+
+          <li class="reveal group flex flex-col rounded-2xl border border-zinc-700 bg-card p-8 transition duration-300 hover:-translate-y-1 hover:border-gold">
+            <span class="flex h-14 w-14 items-center justify-center rounded-full border border-gold/40 text-gold transition group-hover:bg-gold/10">
+              <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+            </span>
+            <h3 class="mt-6 font-serif text-2xl font-semibold leading-snug text-cream">Auxílio-Doença</h3>
+            <p class="mt-3 text-lg text-mist">Teve o benefício cortado no pente-fino mesmo estando incapaz de trabalhar? Garantimos a sua renda.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ E. FAIXA DE IMPACTO / METODOLOGIA ============ -->
+    <section id="metodo" class="border-y border-gold/30 bg-black" aria-label="Como funciona o atendimento">
+      <div class="mx-auto max-w-7xl px-5 py-16 sm:px-10 lg:py-20">
+        <ol class="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-0 md:divide-x md:divide-gold/20">
+          <li class="reveal flex flex-col items-center text-center md:px-10">
+            <span class="relative flex h-20 w-20 items-center justify-center rounded-full border border-gold/50 text-gold">
+              <svg class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+              <span class="absolute -right-1 -top-1 flex h-8 w-8 items-center justify-center rounded-full bg-gold font-serif text-base font-bold text-ink">1</span>
+            </span>
+            <h3 class="mt-6 font-serif text-2xl font-semibold text-cream">Atendimento Humano</h3>
+            <p class="mt-3 max-w-xs text-lg text-mist">Fale direto com a equipe via WhatsApp.</p>
+          </li>
+
+          <li class="reveal flex flex-col items-center text-center md:px-10">
+            <span class="relative flex h-20 w-20 items-center justify-center rounded-full border border-gold/50 text-gold">
+              <svg class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+              <span class="absolute -right-1 -top-1 flex h-8 w-8 items-center justify-center rounded-full bg-gold font-serif text-base font-bold text-ink">2</span>
+            </span>
+            <h3 class="mt-6 font-serif text-2xl font-semibold text-cream">Análise Detalhada</h3>
+            <p class="mt-3 max-w-xs text-lg text-mist">Avaliamos seu histórico no INSS com transparência.</p>
+          </li>
+
+          <li class="reveal flex flex-col items-center text-center md:px-10">
+            <span class="relative flex h-20 w-20 items-center justify-center rounded-full border border-gold/50 text-gold">
+              <svg class="h-9 w-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+              <span class="absolute -right-1 -top-1 flex h-8 w-8 items-center justify-center rounded-full bg-gold font-serif text-base font-bold text-ink">3</span>
+            </span>
+            <h3 class="mt-6 font-serif text-2xl font-semibold text-cream">Ação Imediata</h3>
+            <p class="mt-3 max-w-xs text-lg text-mist">Cuidamos de toda a burocracia sem você sair de casa.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ F. FOOTER ============ -->
+  <footer id="contato" class="bg-asphalt" aria-labelledby="cta-title">
+    <div class="mx-auto max-w-4xl px-5 py-20 text-center sm:px-10 lg:py-24">
+      <span class="mx-auto block h-px w-16 bg-gold" aria-hidden="true"></span>
+      <h2 id="cta-title" class="reveal mt-6 font-serif text-balance text-4xl font-semibold leading-tight text-cream sm:text-5xl">
+        Pronto para garantir o seu direito? <span class="text-gold">Fale comigo hoje.</span>
+      </h2>
+      <div class="reveal mt-10">
+        <a href="https://wa.me/553784028634?text=Ol%C3%A1%2C%20Dra.%20Maria%20Luiza!%20Estou%20pronto(a)%20para%20garantir%20o%20meu%20direito."
+           target="_blank" rel="noopener"
+           class="btn-gold inline-flex min-h-[64px] w-full items-center justify-center gap-3 rounded-full px-10 text-lg font-bold text-ink sm:w-auto">
+          <svg class="h-6 w-6" aria-hidden="true"><use href="#i-wa"/></svg>
+          Chamar no WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="border-t border-gold/20">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-10 md:grid-cols-3">
+        <div>
+          <p class="font-serif text-2xl font-semibold text-cream">Maria Luiza Nery</p>
+          <p class="mt-1 text-sm font-medium uppercase tracking-[0.16em] text-champagne">Advocacia Previdenciária</p>
+        </div>
+
+        <address class="not-italic">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-gold">Escritório</p>
+          <p class="mt-2 flex items-center gap-2 text-lg text-mist">
+            <svg class="h-5 w-5 shrink-0 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+            Campos Altos/MG
+          </p>
+        </address>
+
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-gold">Telefone</p>
+          <p class="mt-2 flex items-center gap-2 text-lg text-mist">
+            <svg class="h-5 w-5 shrink-0 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            <a href="tel:+553784028634" class="underline-offset-4 hover:text-champagne hover:underline">+55 37 8402-8634</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10">
+        <p class="mx-auto max-w-7xl px-5 py-6 text-center text-base italic text-mist/90 sm:px-10">
+          Site em conformidade com o provimento 205/2021 da OAB. Conteúdo com fins informativos.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FAB WhatsApp -->
+  <a href="https://wa.me/553784028634?text=Ol%C3%A1%2C%20Dra.%20Maria%20Luiza!%20Gostaria%20de%20atendimento."
+     target="_blank" rel="noopener" aria-label="Falar com a Dra. Maria Luiza Nery pelo WhatsApp"
+     class="group fixed bottom-5 right-5 z-50 flex items-center gap-3 sm:bottom-7 sm:right-7">
+    <span class="hidden rounded-full bg-ink/90 px-4 py-2 text-base font-semibold text-cream opacity-0 ring-1 ring-gold/40 transition group-hover:opacity-100 group-focus-visible:opacity-100 md:block">Fale conosco</span>
+    <span class="relative flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_12px_30px_-8px_rgba(37,211,102,.6)] transition group-hover:scale-105">
+      <span class="fab-ring absolute inset-0 rounded-full bg-[#25D366]" aria-hidden="true"></span>
+      <svg class="relative h-9 w-9" aria-hidden="true"><use href="#i-wa"/></svg>
+    </span>
+  </a>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function (e, i) { e.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(e); });
+    })();
+  </script>
+</body>
+</html>
+
